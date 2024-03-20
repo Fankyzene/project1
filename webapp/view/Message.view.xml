@@ -17,7 +17,7 @@
                 <Button id="_IDGenButton1" 
                 icon="sap-icon://save"
                 text="{i18n>serviceFormButtonText}"
-                press=".onSaveEmployee"></Button>
+                press="onSubmit"></Button>
             </VBox>
         </Panel>
     </Page>

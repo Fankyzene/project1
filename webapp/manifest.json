@@ -56,8 +56,13 @@
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
           "bundleName": "project1.i18n.i18n"
-        }
+        },
+        "messages": {
+          "type": "sap.ui.model.json.JSONModel",
+          "uri": "Messages.json"
+      }
       },
+      
       "services": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "services.json"
