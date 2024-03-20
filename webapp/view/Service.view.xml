@@ -6,7 +6,8 @@
             <Image id="_IDGenImage1" src="https://cdn.shopify.com/s/files/1/0287/4484/3343/files/repair2.png" width="100%" />
         </VBox>
         <content>
-            
+            <Button id="_IDGenButton1" text="Itt nyomd meg" press="onPress" />   
+               
 
         </content>
     </Page>

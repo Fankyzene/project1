@@ -8,18 +8,15 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("project1.controller.Main", {
-            onPress: function(oEvent) {
+            onPress: function (oEvent) {
                 var oItem = oEvent.getSource();
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter.navTo("detail", {
-                servicePath: window.encodeURIComponent(
-                oItem.getBindingContext("service").getPath().substr(1)
-            ),
-            }
+                oRouter.navTo("Message", {
+                }
                 )
-        }});
-    
+            }
+        });
+
     });
-    
-        
-      
+
+
