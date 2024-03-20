@@ -1,0 +1,72 @@
+{
+    "Services": [
+      {
+        "Name": "Wallis Motor Váci út",
+        "Address": "Budapest, Váci út 175, 1138",
+        "OpeningHours": {
+          "open": 8,
+          "close": 18
+        },
+        "Jobs": [
+          {
+            "title": "József István",
+            "type": 2,
+            "text": "Garanciális szervíz",
+            "startDate": "2024-04-01T12:00:00",
+            "endDate": "2024-04-01T15:00:00"
+          }
+        ]
+      },
+      {
+        "Name": "BMW Budapest Motors",
+        "Address": "Budapest, Szentendrei út 63, 1033",
+        "OpeningHours": {
+          "open": 7,
+          "close": 17
+        },
+        "Jobs": [
+            {
+                "title": "József István",
+                "type": 2,
+                "text": "Olajcsere",
+                "startDate": "2024-04-01T07:00:00",
+                "endDate": "2024-04-01T09:00:00"
+              },
+              {
+                "title": "Béla Kálmán",
+                "type": 2,
+                "text": "Garanciális szervíz",
+                "startDate": "2024-04-01T09:00:00",
+                "endDate": "2024-04-01T11:00:00"
+              }
+        ]
+      },
+      {
+        "Name": "MK-Bikes Márkafüggetlen motorszerviz",
+        "Address": "Budapest, Összekötő u. 4, 1173",
+        "OpeningHours": {
+          "open": 8,
+          "close": 17
+        },
+        "Jobs": [
+            {
+                "title": "Géza Ferenc",
+                "type": 2,
+                "text": "Lánccsere",
+                "startDate": "2024-04-01T13:00:00",
+                "endDate": "2024-04-01T15:00:00"
+              }
+        ]
+      }, 
+      {
+        "Name": "Full Gas",
+        "Address": "Balatonboglár, Nyárfa u. 13, 8630",
+        "OpeningHours": {
+          "open": 8,
+          "close": 18
+        },
+        "Jobs": []
+      }
+    ],
+    "Messages": []
+  }
