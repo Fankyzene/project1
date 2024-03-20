@@ -87,6 +87,16 @@
           "target": [
             "TargetMain"
           ]
+        },
+        {
+          "name": "Service",
+          "pattern": "Service",
+          "target": "Service"
+        },
+        {
+          "name": "Message",
+          "pattern": "Message",
+          "target": "Message"
         }
       ],
       "targets": {
@@ -96,6 +106,20 @@
           "clearControlAggregation": false,
           "viewId": "Main",
           "viewName": "Main"
+        },
+        "Service": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Service",
+          "viewName": "Service"
+        },
+        "Message": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Message",
+          "viewName": "Message"
         }
       }
     },

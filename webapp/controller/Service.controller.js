@@ -11,7 +11,10 @@ sap.ui.define([
             onPress: function(oEvent) {
                 var oItem = oEvent.getSource();
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter.navTo("Service", {
+                oRouter.navTo("detail", {
+                servicePath: window.encodeURIComponent(
+                oItem.getBindingContext("service").getPath().substr(1)
+            ),
             }
                 )
         }});
