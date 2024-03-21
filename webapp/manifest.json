@@ -95,7 +95,7 @@
         },
         {
           "name": "Service",
-          "pattern": "Service",
+          "pattern": "Service/{servicePath}",
           "target": "Service"
         },
         {
