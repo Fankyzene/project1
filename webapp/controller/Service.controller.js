@@ -250,9 +250,7 @@ sap.ui.define([
                 var nLimitedTime = oStartDate - oEndDate;
 
                 if(nLimitedTime < -14400000){
-                    MessageToast.show("Appointment with title \n'"
-                + sAppointmentTitle
-                + "'\n has NOT been created. \n" +  "Time limit reached!"
+                    MessageToast.show("Az új időpontfoglalás túl hosszú. \n" +  "4 óra maximális időtartam"
             )
                 }
                 else{
@@ -271,9 +269,7 @@ sap.ui.define([
             oModel.getData().appointments.push(oNewAppointment);
             oModel.updateBindings();
 
-            MessageToast.show("Appointment with title \n'"
-                + sAppointmentTitle
-                + "'\n has been created"
+            MessageToast.show("A fogalás elkészült."
             );};
 
 
@@ -461,7 +457,12 @@ sap.ui.define([
                     oModel = this.getView().getModel(),
                     sAppointmentPath;
     
-                if (this.byId(sStartDate).getValueState() !== ValueState.Error
+                    var nLimitedTime = oStartDate - oEndDate;
+                    if(nLimitedTime < -14400000){
+                        MessageToast.show("4 óránál hosszabb foglalás NEM lehetséges")
+                    }
+                    else{
+                    if (this.byId(sStartDate).getValueState() !== ValueState.Error
                     && this.byId(sEndDate).getValueState() !== ValueState.Error) {
     
                     if (this.sPath) {
@@ -485,8 +486,8 @@ sap.ui.define([
     
                     this.byId("modifyDialog").close();
                 }
-            },
-    
+            }
+        },
             formatDate: function (oDate) {
                 if (oDate) {
                     var iHours = oDate.getHours(),
