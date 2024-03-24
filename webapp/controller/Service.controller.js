@@ -255,24 +255,29 @@ sap.ui.define([
                     ],
                     supportedAppointmentItems: [
                         {
-                            text: "Team Meeting",
-                            type: CalendarDayType.Type01
+                            text: "Olajcsere",
+                            type: CalendarDayType.Type01,
+                            amont: 5000
                         },
                         {
-                            text: "Personal",
-                            type: CalendarDayType.Type05
+                            text: "Fékszervíz",
+                            type: CalendarDayType.Type05,
+                            amont: 15000
                         },
                         {
-                            text: "Discussions",
-                            type: CalendarDayType.Type08
+                            text: "Időszakos szervíz",
+                            type: CalendarDayType.Type08,
+                            amont: 30000
                         },
                         {
-                            text: "Out of office",
-                            type: CalendarDayType.Type09
+                            text: "Nagygenerál",
+                            type: CalendarDayType.Type09,
+                            amont: 70000
                         },
                         {
-                            text: "Private meeting",
-                            type: CalendarDayType.Type03
+                            text: "Restaurálás",
+                            type: CalendarDayType.Type03,
+                            amont: 250000
                         }
                     ]
                 });
@@ -315,7 +320,10 @@ sap.ui.define([
                     sAppointmentTitle = oAppointment.getTitle(),
                     oModel = this.getView().getModel(),
                     oNewAppointment;
-    
+                
+                
+
+
                 if (bCopy) {
                     oNewAppointment = {
                         title: sAppointmentTitle,
@@ -356,21 +364,38 @@ sap.ui.define([
             handleAppointmentCreateDnD: function(oEvent) {
                 var oStartDate = oEvent.getParameter("startDate"),
                     oEndDate = oEvent.getParameter("endDate"),
-                    sAppointmentTitle = "Új időpont",
-                    oModel = this.getView().getModel(),
-                    oNewAppointment = {
-                        title: sAppointmentTitle,
-                        startDate: oStartDate,
-                        endDate: oEndDate
-                    };
-    
-                oModel.getData().appointments.push(oNewAppointment);
-                oModel.updateBindings();
-    
-                MessageToast.show("Appointment with title \n'"
-                    + sAppointmentTitle
-                    + "'\n has been created"
-                );
+                    sAppointmentTitle = "Új időpont";
+                var nLimitedTime = oStartDate - oEndDate;
+
+                if(nLimitedTime < -14400000){
+                    MessageToast.show("Appointment with title \n'"
+                + sAppointmentTitle
+                + "'\n has NOT been created. \n" +  "Time limit reached!"
+            )
+                }
+                else{
+                    var oStartDate = oEvent.getParameter("startDate"),
+                        oEndDate = oEvent.getParameter("endDate"),
+                        sAppointmentTitle = "Új időpont",
+                        oModel = this.getView().getModel(),
+                        oNewAppointment = {
+                            title: sAppointmentTitle,
+                            startDate: oStartDate,
+                            endDate: oEndDate
+                };
+
+                
+
+            oModel.getData().appointments.push(oNewAppointment);
+            oModel.updateBindings();
+
+            MessageToast.show("Appointment with title \n'"
+                + sAppointmentTitle
+                + "'\n has been created"
+            );};
+
+
+                
             },
     
             handleViewChange: function () {

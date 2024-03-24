@@ -8,28 +8,28 @@
 			class="sapUiResponsivePadding--header"
 			placement="Auto">
 		<beginButton>
-			<Button id="_IDGenButton2" text="Edit" type="Emphasized" press="handleEditButton"/>
+			<Button  text="Edit" type="Emphasized" press="handleEditButton"/>
 		</beginButton>
 		<endButton>
-			<Button id="_IDGenButton1" text="Delete" press="handlePopoverDeleteButton"/>
+			<Button  text="Delete" press="handlePopoverDeleteButton"/>
 		</endButton>
 		<f:SimpleForm
 				id="appointmentEditForm"
 				editable="false"
 				layout="ResponsiveGridLayout"
 				singleContainerFullSize="false">
-			<Label id="_IDGenLabel1"
+			<Label 
 					text="Additional information"
 					labelFor="moreInfo"/>
 			<Text id="moreInfoText" text="{text}"/>
-			<Label id="_IDGenLabel2" text="From" labelFor="startDate"/>
-			<Text id="_IDGenText1"
+			<Label  text="From" labelFor="startDate"/>
+			<Text 
 					text="{
 						path: 'startDate',
 						formatter:'.formatDate'
 					}"/>
-			<Label id="_IDGenLabel3" text="To" labelFor="endDate"/>
-			<Text id="_IDGenText2"
+			<Label  text="To" labelFor="endDate"/>
+			<Text 
 					text="{
 						path: 'endDate',
 						formatter:'.formatDate'
@@ -39,7 +39,7 @@
 					text="All-day"
 					selected="{allDay>/allDay}"
 					enabled="false"/>
-			<Label id="_IDGenLabel4" text="Type" labelFor="appType"/>
+			<Label  text="Type" labelFor="appType"/>
 			<Text id="appTypeText" text="{ path: 'type', formatter: '._typeFormatter'}"/>
 		</f:SimpleForm>
 	</ResponsivePopover>

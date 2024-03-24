@@ -14,7 +14,7 @@
 			intro="{services>Address}"
 			title="{services>Name}"/>
             <HBox id="_IDGenHBox1" alignItems="End">
-                <Button id="_IDGenButton1" text="Írjon nekünk üzenetet!" press="onPress" />   
+                <Button  text="Írjon nekünk üzenetet!" press="onPress" />   
             </HBox>
             <SinglePlanningCalendar
 			id="SPC1"
