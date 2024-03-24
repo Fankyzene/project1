@@ -12,7 +12,7 @@ sap.ui.define([
                 const oRouter = this.getOwnerComponent().getRouter();
                 oRouter.getRoute("Service").attachPatternMatched(this.onObjectMatched, this);
             },
-    
+
             onObjectMatched(oEvent) {
                 this.getView().bindElement({
                     path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").servicePath),
@@ -25,9 +25,10 @@ sap.ui.define([
                 oRouter.navTo("Message", {
                 }
                 )
-            }
+            },
+            
         });
 
     });
-
-
+            
+ 
