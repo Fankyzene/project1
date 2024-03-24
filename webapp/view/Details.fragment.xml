@@ -8,10 +8,10 @@
 			class="sapUiResponsivePadding--header"
 			placement="Auto">
 		<beginButton>
-			<Button  text="Edit" type="Emphasized" press="handleEditButton"/>
+			<Button  text="Szerkeszt" type="Emphasized" press="handleEditButton"/>
 		</beginButton>
 		<endButton>
-			<Button  text="Delete" press="handlePopoverDeleteButton"/>
+			<Button  text="Töröl" press="handlePopoverDeleteButton"/>
 		</endButton>
 		<f:SimpleForm
 				id="appointmentEditForm"
@@ -19,16 +19,16 @@
 				layout="ResponsiveGridLayout"
 				singleContainerFullSize="false">
 			<Label 
-					text="Additional information"
+					text="Motorkerékpár típusa"
 					labelFor="moreInfo"/>
 			<Text id="moreInfoText" text="{text}"/>
-			<Label  text="From" labelFor="startDate"/>
+			<Label  text="Kezdési időpont" labelFor="startDate"/>
 			<Text 
 					text="{
 						path: 'startDate',
 						formatter:'.formatDate'
 					}"/>
-			<Label  text="To" labelFor="endDate"/>
+			<Label  text="Várható befejezési időpont" labelFor="endDate"/>
 			<Text 
 					text="{
 						path: 'endDate',
@@ -39,7 +39,7 @@
 					text="All-day"
 					selected="{allDay>/allDay}"
 					enabled="false"/>
-			<Label  text="Type" labelFor="appType"/>
+			<Label  text="Típus" labelFor="appType"/>
 			<Text id="appTypeText" text="{ path: 'type', formatter: '._typeFormatter'}"/>
 		</f:SimpleForm>
 	</ResponsivePopover>

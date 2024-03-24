@@ -558,7 +558,7 @@ sap.ui.define([
                 this._oChosenDayData = {start: oStartDate, end: oEndDate };
                 this.sPath = null;
     
-                this._arrangeDialogFragment("Create appointment");
+                this._arrangeDialogFragment("Időpont foglalás");
             },
     
             handleStartDateChange: function (oEvent) {

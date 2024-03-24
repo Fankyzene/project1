@@ -1,7 +1,7 @@
 {
     "Services": [
       {
-        "Name": "Wallis Motor Váci út",
+        "Name": "Wallis Motor - Váci út",
         "Address": "Budapest, Váci út 175, 1138",
         "OpeningHours": {
           "open": 8,
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "Name": "MK-Bikes Márkafüggetlen motorszerviz",
+        "Name": "MK-Bikes - Márkafüggetlen motorszerviz",
         "Address": "Budapest, Összekötő u. 4, 1173",
         "OpeningHours": {
           "open": 8,
@@ -59,7 +59,7 @@
         ]
       }, 
       {
-        "Name": "Full Gas",
+        "Name": "Full Gas - Balatonboglár",
         "Address": "Balatonboglár, Nyárfa u. 13, 8630",
         "OpeningHours": {
           "open": 8,

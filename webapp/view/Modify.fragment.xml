@@ -8,7 +8,7 @@
 			<Button  text="OK" type="Emphasized" press="handleDialogOkButton"/>
 		</beginButton>
 		<endButton>
-			<Button id="_IDGenButton2" text="Cancel" press="handleDialogCancelButton"/>
+			<Button id="_IDGenButton2" text="Mégse" press="handleDialogCancelButton"/>
 		</endButton>
 		<l:VerticalLayout id="_IDGenVerticalLayout1"
 				class="sapUiContentPadding"
@@ -18,11 +18,11 @@
 					editable="true"
 					layout="ResponsiveGridLayout"
 					singleContainerFullSize="false">
-				<Label id="_IDGenLabel1" text="Title" labelFor="appTitle"/>
+				<Label id="_IDGenLabel1" text="Név" labelFor="appTitle"/>
 				<Input id="appTitle" maxLength="255"/>
-				<Label id="_IDGenLabel2" text="Additional information" labelFor="inputInfo"/>
+				<Label id="_IDGenLabel2" text="Motorkerékpár típusa" labelFor="inputInfo"/>
 				<Input id="moreInfo" maxLength="255"/>
-				<Label id="_IDGenLabel3" text="From" labelFor="startDate"/>
+				<Label id="_IDGenLabel3" text="Kezdési időpont" labelFor="startDate"/>
 				<DateTimePicker
 						id="DTPStartDate"
 						required="true"
@@ -33,7 +33,7 @@
 						required="true"
 						visible="{= ${allDay>/allDay}}"
 						change="handleDatePickerChange"/>
-				<Label id="_IDGenLabel4" text="To" labelFor="endDate"/>
+				<Label id="_IDGenLabel4" text="Várható befejezési időpont" labelFor="endDate"/>
 				<DateTimePicker
 						id="DTPEndDate"
 						required="true"
@@ -46,10 +46,10 @@
 						change="handleDatePickerChange"/>
 				<CheckBox
 						id="allDay"
-						text="All-day"
+						text="Egész napos"
 						selected="{allDay>/allDay}"
 						select="handleCheckBoxSelect"/>
-				<Label id="_IDGenLabel5" text="Type" labelFor="appType"/>
+				<Label id="_IDGenLabel5" text="Típus" labelFor="appType"/>
 				<Select
 						id="appType"
 						items="{/supportedAppointmentItems}">
