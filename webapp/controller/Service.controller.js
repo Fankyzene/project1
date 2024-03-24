@@ -237,9 +237,9 @@ sap.ui.define([
                 oAppointment.setStartDate(oStartDate);
                 oAppointment.setEndDate(oEndDate);
     
-                MessageToast.show("Appointment with title \n'"
+                MessageToast.show("A \n'"
                     + sAppointmentTitle
-                    + "'\n has been resized"
+                    + "foglalás" + "'\n átütemezve."
                 );
             },
     
