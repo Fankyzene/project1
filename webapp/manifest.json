@@ -133,6 +133,18 @@
       "type": "XML",
       "async": true,
       "id": "App"
-    }
+    },
+    "config": {
+			"sample": {
+				"files": [
+					"Page.view.xml",
+					"Page.controller.js",
+					"Modify.fragment.xml",
+					"Details.fragment.xml",
+					"Legend.fragment.xml",
+					"manifest.json"
+				]
+			}
+		}
   }
 }
